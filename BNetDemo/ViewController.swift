@@ -20,26 +20,14 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async{
                     self.navigationController?.popViewController(animated: false)
                 }
-              //  self.navigationController?.popViewController(animated: false)
-            }
-            
-        }
-        
-        
+            }   
+        }     
     }
-    // @IBAction func backPressed(sender: UIButton){
-        
-    //}
     
     var sessionId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("se" + sessionId)
-      // print(sessionId)
-    
-        
-        
-        
+        print("se" + sessionId)    
     }
     
     func alert(message: String){
@@ -47,17 +35,4 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)//presentViewController(alert,anime)
     }
-        // Do any additional setup after loading the view, typically from a nib.
     }
-    
-   
-   /*
-    func alert(message: String){
-        let alert = UIAlertController(title: "Внимание", message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)//presentViewController(alert,anime)
-    }
-*/
-//}
-
-
