@@ -25,34 +25,6 @@ class Reachability {
         let isReachable = flags.contains(.reachable)
         let needsConnection = flags.contains(.connectionRequired)
         return (isReachable && !needsConnection)
-    } // isConnectedToNetwork
-} // class Reachabilit
+    } 
+} 
     
-
-
-/*
-public class Reachability {
-    
-     func isConnectedToNetwork()->Bool{
-        
-        var Status:Bool = false
-        let url = NSURL(string: "http://google.com/")
-        let request = NSMutableURLRequest(url: url! as URL)
-        request.httpMethod = "HEAD"
-        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
-        request.timeoutInterval = 10.0
-        
-        var response: URLResponse?
-        
-        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: nil ) as NSData
-        
-        if let httpResponse = response as? HTTPURLResponse {
-            if httpResponse.statusCode == 200 {
-                Status = true
-            }
-        }
-
-        return Status
-    }
-}
-*/
